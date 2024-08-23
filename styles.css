@@ -1,0 +1,118 @@
+@font-face {
+    font-family: GilroyLight;
+    src: url(Gilroy-UltraLight.ttf);
+}
+@font-face {
+    font-family: GilroyRegular;
+    src: url(Gilroy-Regular.ttf);
+}
+@font-face {
+    font-family: HK;
+    src: url(HKGroteskWide-ExtraBold.otf);
+}
+@keyframes changeBackground {
+    0%{
+        opacity: 1;
+    }
+    50% {
+      transform: rotate(45deg);
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+body{
+    display: flex;
+}
+
+.left{
+    height: 88vh;
+    width: 45%;
+    margin: 5vh;
+    background-size: cover;
+    border-radius: 5%;
+}
+.bottom_text{
+    font-family: GilroyLight;
+    color: white;
+    font-size: 50px;
+    margin-top: 70vh;
+    display: flex;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 50px;
+    justify-content: space-between;
+}
+.sa{
+    width: 25%;
+}
+.hk{
+    font-family: HK;
+    font-size: 45px;
+}
+
+.plane{
+    margin-top: 5vh;
+    width: 80px;
+    height: 72px;
+    margin-left: 70vh;
+    background-image: url(takeoff.png);
+    background-size: cover;
+    transition: 1s;
+    transform: rotate(36deg);
+}
+
+.plane:hover{
+    transform: rotate(0);
+}
+
+.heading{
+    margin-top: 5vh;
+    font-family: GilroyLight;
+    font-size: 60px;
+    margin-left: 5vh;
+}
+
+.text{
+    margin-top: 5vh;
+    font-family: GilroyLight;
+    font-size: 30px;
+    margin-left: 5vh;
+}
+
+.button{
+    justify-content: space-around;
+    font-family: GilroyLight;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    background-color: #1B2F1F;
+    width: 300px;
+    height: 75px;
+    margin-top: 5vh;
+    margin-left: 25vh;
+    border-radius: 25px;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.button > img{
+    margin-top: -15px;
+}
+
+.button:hover{
+
+}
+
+
+.background-video{
+    height: 88vh;
+    width: 45%;
+    margin: 5vh;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    border-radius: 5%;
+}
