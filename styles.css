@@ -54,6 +54,15 @@ body{
 .sa{
     width: 25%;
 }
+.hk{
+    font-family: HK;
+    font-size: 25px;
+    display: none;
+}
+.hk3{
+    font-family: HK;
+    font-size: 45px;
+}
 .hk1{
     font-family: HK;
     font-size: 45px;
@@ -174,9 +183,9 @@ body{
         font-family: GilroyLight;
         color: white;
         font-size: 20px;
-        margin-top: 40vh;
+        margin-top: 38vh;
         display: flex;
-        margin-bottom: 50px;
+        margin-bottom: 70px;
         justify-content: space-between;
         transition: 0.5s;
     }
@@ -184,8 +193,17 @@ body{
         width: 25%;
         display: none;
     }
+    .hk{
+        font-family: HK;
+        font-size: 25px;
+    }
     .hk1{
 
+        display: none;
+    }
+    .hk3{
+        font-family: HK;
+        font-size: 45px;
         display: none;
     }
     .hk2{
@@ -218,7 +236,7 @@ body{
     
     .heading{
         font-family: GilroyLight;
-        font-size: 33px;
+        font-size: 38px;
         margin-left: 5vh;
     }
     
