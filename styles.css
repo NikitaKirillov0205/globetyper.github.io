@@ -22,6 +22,12 @@
     }
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+@media only screen and (min-width: 600px){
 body{
     display: flex;
 }
@@ -43,13 +49,17 @@ body{
     padding-right: 40px;
     margin-bottom: 50px;
     justify-content: space-between;
+    transition: 0.5s;
 }
 .sa{
     width: 25%;
 }
-.hk{
+.hk1{
     font-family: HK;
     font-size: 45px;
+}
+.hk2{
+    display: none;
 }
 
 .plane{
@@ -97,15 +107,15 @@ body{
     box-sizing: border-box;
     padding-top: 20px;
     padding-left: 20px;
+    transition: 0.5s;
 }
 .button > img{
     margin-top: -15px;
 }
 
 .button:hover{
-
+    background-color: #576A47;
 }
-
 
 .background-video{
     height: 88vh;
@@ -115,4 +125,148 @@ body{
     position: absolute;
     z-index: -1;
     border-radius: 5%;
+}
+
+.bottom_text >img{
+    transition: 0.5s;
+}
+.bottom_text :hover > img{
+    animation: changeBackground 5s;
+}
+.planne{
+    display: none;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px){
+    .left{
+        height: 50vh;
+        width: 80%;
+        margin: 5vh;
+        background-size: cover;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+    .bottom_text{
+        font-family: GilroyLight;
+        color: white;
+        font-size: 20px;
+        margin-top: 40vh;
+        display: flex;
+        margin-bottom: 50px;
+        justify-content: space-between;
+        transition: 0.5s;
+    }
+    .sa{
+        width: 25%;
+        display: none;
+    }
+    .hk1{
+
+        display: none;
+    }
+    .hk2{
+        font-family: HK;
+        font-size: 40px;
+    }
+    .plane{
+        display: none;
+        margin-top: 5vh;
+        width: 80px;
+        height: 72px;
+        background-image: url(takeoff.png);
+        background-size: cover;
+        transition: 1s;
+        transform: rotate(36deg);
+    }
+    .planne{
+        margin-top: 2vh;
+        margin-bottom:-2vh ;
+        width: 80px;
+        height: 72px;
+        background-image: url(takeoff.png);
+        background-size: cover;
+        transition: 1s;
+    }
+    
+    .planne:hover{
+        transform: rotate(0);
+    }
+    
+    .heading{
+        font-family: GilroyLight;
+        font-size: 33px;
+        margin-left: 5vh;
+    }
+    
+    .text{
+        margin-top: 5vh;
+        font-family: GilroyLight;
+        font-size: 20px;
+        margin-left: 5vh;
+    }
+    
+    .button{
+        justify-content: space-around;
+        font-family: GilroyLight;
+        font-size: 30px;
+        color: white;
+        text-decoration: none;
+        display: flex;
+        background-color: #1B2F1F;
+        width: 300px;
+        height: 75px;
+        margin-top: 5vh;
+        margin-left: 5vh;
+        border-radius: 25px;
+        box-sizing: border-box;
+        padding-top: 20px;
+        padding-left: 20px;
+        transition: 0.5s;
+    }
+    .button > img{
+        margin-top: -15px;
+    }
+    
+    .button:hover{
+        background-color: #576A47;
+    }
+    
+    .background-video{
+        height: 50vh;
+        width: 80%;
+        margin: 5vh;
+        object-fit: cover;
+        position: absolute;
+        z-index: -1;
+        border-radius: 15px;
+    }
+    
+    .bottom_text > img{
+        width: 20px;
+        display: none;
+    }
 }
