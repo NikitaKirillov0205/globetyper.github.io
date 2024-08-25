@@ -43,6 +43,7 @@ html, body {
         opacity: 0.8;
     }
 
+
     .hk5{
         font-family: HK;
         font-size: 35px;
@@ -227,6 +228,11 @@ html, body {
         font-family: HK;
         font-size: 55px;
         text-align: left;
+    }
+    .hk55{
+        font-family: HK;
+        font-size: 35px;
+        text-align: center;
     }
     .hk{
         display: none;
