@@ -1,0 +1,355 @@
+@font-face {
+    font-family: GilroyLight;
+    src: url(Gilroy-UltraLight.ttf);
+}
+@font-face {
+    font-family: GilroyRegular;
+    src: url(Gilroy-Regular.ttf);
+}
+@font-face {
+    font-family: HK;
+    src: url(HKGroteskWide-ExtraBold.otf);
+}
+
+html, body {
+    max-width: 100%;
+    max-height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+@media only screen and (max-width: 600px){
+    body{
+        display: grid;
+        align-items: center;
+        overflow-y: auto;
+        max-width: 100%;
+    }
+    html{
+        overflow-y: auto;
+    }
+    .topstory{
+        margin-top: 5vh;
+        width: 35vh;
+        border-radius: 25px;
+        transition: 0.5s;
+        margin-left: 5vh;
+    }
+
+
+    .topstory:hover{
+        opacity: 0.8;
+    }
+
+    .hk5{
+        font-family: HK;
+        font-size: 35px;
+        text-align: center;
+    }
+    .hk55{
+        font-family: HK;
+        font-size: 35px;
+        text-align: left;
+        margin-left: 5vh;
+    }
+    .hk{
+        display: none;
+    }
+    .hk3{
+        font-family: HK;
+        font-size: 30px;
+    }
+    .hk1{
+        font-family: HK;
+        font-size: 35px;
+    }
+    .hk2{
+        display: none;
+    }
+    .heading{
+        margin-top: 5vh;
+        font-family: GilroyLight;
+        font-size: 60px;
+        margin-left: 5vh;
+    }
+    .bottom_text{
+        width: 80%;
+        font-family: GilroyLight;
+        font-size: 35px;
+        margin-top: 3vh;
+        margin-bottom: 50px;
+        transition: 0.5s;
+
+        text-align: center;
+    }    
+    .txt{
+        font-family: GilroyRegular;
+        font-size: 23px;
+        margin-left: 40px;
+        width: 70%;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    .button{
+        justify-content: space-around;
+        font-family: GilroyLight;
+        font-size: 30px;
+        color: white;
+        text-decoration: none;
+        display: flex;
+        background-color: #1B2F1F;
+        width: 60%;
+        height: 75px;
+        margin-top: 5vh;
+        border-radius: 25px;
+        box-sizing: border-box;
+        padding-top: 20px;
+        padding-left: 20px;
+        transition: 0.5s;
+        margin-left: 7vh;
+
+    }
+    .button > img{
+        margin-top: -15px;
+    }
+    
+    .button:hover{
+        background-color: #576A47;
+    }
+    .left{
+        position: sticky;
+    }
+    .right{
+        width: 150%;
+        margin-top: 5vh;
+        text-align: center;
+        margin-right: 10vh;
+    }
+    .story{
+        margin: 2vh;
+        width: 300px;
+        height: 120px;
+        background-color: #1B2F1F;
+        border-radius: 25px;
+    }
+    .container{
+        height: 65%;
+        overflow-y: auto;
+        padding-bottom: 50px;
+    }
+
+    .artbig{
+        font-family: GilroyRegular;
+        font-size: 23px;
+        text-align: center;
+        margin-left: 1vh;
+    }
+    .artsmall{
+        font-family: GilroyLight;
+        font-size: 18px;
+        margin-top: 1vh;
+        margin-left: 2vh;
+        text-align: left;
+        display: none;
+    }
+    .story{
+        color: white;
+        display: flex;
+        padding: 30px;
+    }
+    .artimg{
+        width: 160px;
+        height: 130px;
+        border-radius: 20px;
+    }
+    .smcont{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 2vh;
+        justify-content: space-around;
+    }
+    .tag{
+        width: 80px;
+        height: 20px;
+        background-color: #576A47;
+        display: grid;
+        text-align: center;
+        align-items: center;
+        border-radius: 25px;
+        font-family: GilroyLight;
+        font-size: 16px;
+        margin: 0.5vh;
+    }
+
+    .del{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 600px){
+    .d{
+        display: none;
+    }
+    body{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .topstory{
+        margin: 5vh;
+        width: 80%;
+        border-radius: 25px;
+        transition: 0.5s;
+    }
+
+
+    .topstory:hover{
+        opacity: 0.8;
+    }
+
+    .hk5{
+        font-family: HK;
+        font-size: 55px;
+        text-align: left;
+    }
+    .hk{
+        display: none;
+    }
+    .hk3{
+        font-family: HK;
+        font-size: 30px;
+    }
+    .hk1{
+        font-family: HK;
+        font-size: 35px;
+    }
+    .hk2{
+        display: none;
+    }
+    .heading{
+        margin-top: 5vh;
+        font-family: GilroyLight;
+        font-size: 60px;
+        margin-left: 5vh;
+    }
+    .bottom_text{
+        font-family: GilroyLight;
+        font-size: 35px;
+        margin-top: 2vh;
+        padding-left: 40px;
+        margin-bottom: 50px;
+        transition: 0.5s;
+    }    
+    .txt{
+        font-family: GilroyRegular;
+        font-size: 25px;
+        margin-top: 2vh;
+        margin-left: 40px;
+        width: 80%;
+        margin-bottom: 50px;
+    }
+    .button{
+        justify-content: space-around;
+        font-family: GilroyLight;
+        font-size: 30px;
+        color: white;
+        text-decoration: none;
+        display: flex;
+        background-color: #1B2F1F;
+        width: 300px;
+        height: 75px;
+        margin-top: 5vh;
+        margin-left: 18vh;
+        border-radius: 25px;
+        box-sizing: border-box;
+        padding-top: 20px;
+        padding-left: 20px;
+        transition: 0.5s;
+    }
+    .button > img{
+        margin-top: -15px;
+    }
+    
+    .button:hover{
+        background-color: #576A47;
+    }
+    .left{
+        position: sticky;
+    }
+    .right{
+        width: 150%;
+        margin-top: 5vh;
+        text-align: center;
+        margin-right: 10vh;
+    }
+    .story{
+        margin: 2vh;
+        width: 600px;
+        height: 150px;
+        background-color: #1B2F1F;
+        border-radius: 25px;
+    }
+    .container{
+        height: 65%;
+        overflow-y: auto;
+        padding-bottom: 50px;
+    }
+
+    .artbig{
+        font-family: GilroyRegular;
+        font-size: 23px;
+        margin-top: 1vh;
+        margin-left: 2vh;
+        text-align: left;
+    }
+    .artsmall{
+        font-family: GilroyLight;
+        font-size: 18px;
+        margin-top: 1vh;
+        margin-left: 2vh;
+        text-align: left;
+    }
+    .story{
+        color: white;
+        display: flex;
+        padding: 30px;
+    }
+    .artimg{
+        width: 220px;
+        height: 150px;
+        border-radius: 20px;
+    }
+    .smcont{
+        display: flex;
+        margin-top: 3vh;
+        margin-left: 2vh;
+        justify-content: space-around;
+    }
+    .tag{
+        width: 100px;
+        height: 25px;
+        background-color: #576A47;
+        display: grid;
+        text-align: center;
+        align-items: center;
+        border-radius: 25px;
+        font-family: GilroyLight;
+        font-size: 18px;
+    }
+}
