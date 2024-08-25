@@ -36,6 +36,7 @@ html, body {
         border-radius: 25px;
         transition: 0.5s;
         margin-left: 5vh;
+        display: none;
     }
 
 
@@ -79,8 +80,8 @@ html, body {
         width: 80%;
         font-family: GilroyLight;
         font-size: 35px;
-        margin-top: 3vh;
-        margin-bottom: 50px;
+        margin-top: 10vh;
+        margin-bottom: 20px;
         transition: 0.5s;
 
         text-align: center;
@@ -187,6 +188,14 @@ html, body {
     .del{
         display: none;
     }
+    .g{
+        color: #576A47;
+        font-family: HK;
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 30px;
+        margin-left: -7vh;
+    }
 }
 
 
@@ -204,6 +213,9 @@ html, body {
 
 
 @media only screen and (min-width: 600px){
+    .g{
+        display: none;
+    }
     .d{
         display: none;
     }
