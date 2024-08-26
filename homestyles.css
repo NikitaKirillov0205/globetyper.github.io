@@ -322,6 +322,10 @@ html, body {
         height: 150px;
         background-color: #1B2F1F;
         border-radius: 25px;
+        transition: 0.5s;
+    }
+    .story:hover{
+        background-color:#576A47;
     }
     .container{
         height: 65%;
