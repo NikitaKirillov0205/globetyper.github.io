@@ -1,0 +1,210 @@
+@font-face {
+    font-family: GilroyLight;
+    src: url(Gilroy-UltraLight.ttf);
+}
+@font-face {
+    font-family: GilroyRegular;
+    src: url(Gilroy-Regular.ttf);
+}
+@font-face {
+    font-family: HK;
+    src: url(HKGroteskWide-ExtraBold.otf);
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: -8px;
+}
+
+@media only screen and (min-width: 600px){
+    .body{
+        display: flex
+    }
+    .background-video{
+        height: 80vh;
+        width: 45%;
+        margin: 5vh;
+        object-fit: cover;
+        z-index: -1;
+        border-radius: 5%;
+    }
+    .plane{
+        margin-top: 5vh;
+        width: 80px;
+        height: 72px;
+        background-image: url(takeoff.png);
+        background-size: cover;
+        transition: 1s;
+        transform: rotate(36deg);
+        margin-left: auto;
+        margin-right: 5vh;
+    }
+    .planne{
+        margin-top: 2vh;
+        margin-bottom:-2vh ;
+        width: 80px;
+        height: 72px;
+        background-image: url(takeoff.png);
+        background-size: cover;
+        transition: 1s;
+        display: none;
+    }
+    
+    .plane:hover{
+        transform: rotate(0);
+    }
+    .text{
+        margin-top: 5vh;
+        font-family: GilroyRegular;
+        font-size: 30px;
+        margin-right: 5vh;
+    }
+    .hk{
+        font-family: HK;
+        font-size: 55px;
+    }
+    .hk1{
+
+        display: none;
+    }
+    .hk3{
+        font-family: HK;
+        font-size: 45px;
+        display: none;
+    }
+    .hk2{
+        font-family: HK;
+        font-size: 40px;
+    }
+    .txt{
+        margin-top: 20px;
+        font-size: 50px;
+        font-family: GilroyLight;
+    }
+    .head{
+        font-family: HK;
+        font-size: 30px;
+        margin-right: 5vh;
+        margin-left: 5vh;
+    }
+    .footer{
+        height: 15vh;
+        display: grid;
+        align-items: center;
+        text-align: center;
+        background-color: #1B2F1F;
+        color: white;
+        font-family: HK;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px){
+    .background-video{
+        height: 50vh;
+        width: 80%;
+        margin: 5vh;
+        object-fit: cover;
+        z-index: -1;
+        border-radius: 15px;
+    }
+    .plane{
+        display: none;
+        margin-top: 5vh;
+        width: 80px;
+        height: 72px;
+        background-image: url(takeoff.png);
+        background-size: cover;
+        transition: 1s;
+        transform: rotate(36deg);
+        margin-left: auto;
+        margin-right: 5vh;
+    }
+    .planne{
+        margin-top: 5vh;
+        margin-bottom:-2vh ;
+        width: 80px;
+        height: 72px;
+        background-image: url(takeoff.png);
+        background-size: cover;
+        transition: 1s;
+        margin-left: auto;
+    }
+    .body > div{
+        margin: 5vh;
+    }
+    .plane:hover{
+        transform: rotate(0);
+    }
+    .text{
+        margin-top: 5vh;
+        font-family: GilroyRegular;
+        font-size: 30px;
+        margin: 1vh;
+    }
+    .hk{
+        font-family: HK;
+        font-size: 35px;
+    }
+    .hk1{
+
+        display: none;
+    }
+    .hk3{
+        font-family: HK;
+        font-size: 45px;
+        display: none;
+    }
+    .hk2{
+        font-family: HK;
+        font-size: 40px;
+    }
+    .txt{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 35px;
+        font-family: GilroyLight;
+    }
+    .head{
+        font-family: HK;
+        font-size: 30px;
+        margin-right: 5vh;
+        margin-left: 5vh;
+    }
+    .footer{
+        height: 15vh;
+        display: grid;
+        align-items: center;
+        text-align: center;
+        background-color: #1B2F1F;
+        color: white;
+        font-family: HK;
+    }
+}
